@@ -10,9 +10,25 @@
       .content{
         padding: 30px;
       }
-      #messages{
-        min-height: 300px;
+      #chatMessages {
+        font-family: sans-serif;
+        font-size: 0.8em;
       }
+    .chat {
+      background-image: linear-gradient(#BED4E6, #FFFFFF);
+      border: solid 1px #84A8D6;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 10px;
+    }
+    .chat:hover {
+      background-image: linear-gradient(#FFFFFF, #BED4E6);
+    }
+    .user {
+      background-color: inherit;
+      color: #224577;
+      font-weight: bold;
+    }
     </style>
 </head>
 
@@ -25,7 +41,7 @@
       </div>
       <div class="col-sm-4">
         <div class="row">
-          <pre id="messages"></pre>
+          <div id="chatMessages"></div>
         </div>
         <div class="row">
           <label>Your ID:</label><br/>
